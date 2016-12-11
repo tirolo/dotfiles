@@ -1,0 +1,14 @@
+# https://github.com/lyze/posh-git-sh#posh-git-bash
+source ~/git-prompt.sh
+export PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w" "\\\$ ";'$PROMPT_COMMAND
+
+# https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;

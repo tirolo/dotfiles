@@ -1,0 +1,12 @@
+#### This file is for configuring brew and installing its specific formulaes
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+brew install git
+
+# Used for https://github.com/lyze/posh-git-sh
+brew install bash-completion
