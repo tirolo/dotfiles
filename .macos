@@ -44,6 +44,9 @@ sudo pmset -a sms 0
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
+# Use "F" keys without "fn" (eg.L F1, F2, etc.)
+defaults write -g com.apple.keyboard.fnState -bool true
+
 # Enable swap between full screen apps with 4 fingers swipe (so that I can use the 3 fingers bellow)
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 0
 # Enable select text with three fingers drag
