@@ -23,4 +23,9 @@ First of all I will borrow the warning from [mathiasbynens dotfiles repo](https:
 ## One-liner execution
 **NOTE** It will execute ALL the configurations on your computer so make sure you understand it before executing the following code :)
 
-```$(curl -fsSL https://raw.githubusercontent.com/tirolo/dotfiles/master/bootstrap.sh)```
+- Copy the file:
+```cd; curl -#L https://github.com/tirolo/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}```
+
+- Then execute the bootstrap
+
+```source bootstrap.sh```

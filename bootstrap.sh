@@ -7,9 +7,9 @@ if test ! $(which brew); then
 fi
 
 # Run dotfiles
-$(curl -fsSL https://raw.githubusercontent.com/tirolo/dotfiles/master/.macos)
-$(curl -fsSL https://raw.githubusercontent.com/tirolo/dotfiles/master/.brew)
-$(curl -fsSL https://raw.githubusercontent.com/tirolo/dotfiles/master/.brewcask)
+source .macos
+source .brew
+source .brewcask
 
 # Copy .custom_bash_profile to home
 curl -fsSL https://raw.githubusercontent.com/tirolo/dotfiles/master/.custom_bash_profile > ~/.custom_bash_profile
